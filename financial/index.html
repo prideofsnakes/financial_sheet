@@ -22,7 +22,7 @@
       <tr id="editableProfit">
         <td class="no-border"></td>
         <td><input type="text" id="profitPurpose" placeholder="enter the purpose" width="200"></td>
-        <td><input type="date" id="profitDate" value="2000-01-01"></td>
+        <td><input type="date" id="profitDate" value="DD-MM-YYYY"></td>
         <td><input type="number" step="any" id="profitValue" placeholder="enter the sum"></td>
       </tr>
     </tbody>
@@ -44,7 +44,7 @@
       <tr id="editableSpending">
         <td class="no-border"></td>  
         <td><input type="text" id="spendingPurpose" placeholder="enter the purpose"></td>
-        <td><input type="date" id="spendingDate" value="2000-01-01"></td>
+        <td><input type="date" id="spendingDate" value="DD-MM-YYYY"></td>
         <td><input type="number" step="any" id="spendingValue" placeholder="enter the sum"></td>
       </tr>
         </tbody>     
@@ -53,9 +53,9 @@
 <button class="button" type="button" id="del_1">Удалить строку</button><br />
 <button class="button" type="button" id="edit">Обновить данные</button><br />
 <section>
-<p>Итоговый расход:<output id="spendingConclusion" type="number"></output></p>
-<p>Итоговый доход:<output id="profitConclusion" type="number"></output></p>
-<p>Останется:<output class="out" id="conc" ></output></p>  
+<p>Итоговый расход:<output id="spendingConclusion" type="number">0</output></p>
+<p>Итоговый доход:<output id="profitConclusion" type="number">0</output></p>
+<p>Останется:<output class="out" id="conc" >0</output></p>  
 </section>
 
 </div>

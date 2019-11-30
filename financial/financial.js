@@ -113,25 +113,25 @@ function recount (array, inputValue, concClass, indexConcArr) {
 }
 //рефакторить функцию добалвения строики
 		function deleteRow() {
-		let element = $('tr').has('input:checked');
-     	let elementValue = element.find('td .cash');
-        for (let i in elementValue) {
-        	if (elementValue[i].value) {
-        		if (elementValue[i].classList[1] === 'profit') {
-        		arr1[arr1.indexOf(+elementValue[i].value)] = 0;      
+		let elementCollection = $('tr').has('input:checked');
+     	let element = elementCollection.find('td .cash');
+        for (let i in element) {
+        	if (element[i].value) {
+        		if (element[i].classList[1] === 'profit') {
+        		arr1[arr1.indexOf(+element[i].value)] = 0;      
         		recount(arr1, profitArr[2], $('#profitConclusion'),0);
         		}	
             
             
         		else {
-        		arr2[arr2.indexOf(+elementValue[i].value)] = 0;
+        		arr2[arr2.indexOf(+element[i].value)] = 0;
         		recount(arr2, spendingArr[2], $('#spendingConclusion'), 1);
 
         		}
         	} 
                        
         }
-        element.remove();
+        elementCollection.remove();
         }
   	
 		function editRow() {
