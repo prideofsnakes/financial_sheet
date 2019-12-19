@@ -12,7 +12,8 @@ function createRow(propArr) //создаем новую строку табли�
 
 	const text = document.createElement('input');
 	text.type = 'text';
-	text.value = propArr[0].value;
+	text.value = text.title = propArr[0].value;
+
 
 	const day = document.createElement('input');
 	day.type = 'date';
@@ -23,7 +24,7 @@ function createRow(propArr) //создаем новую строку табли�
 	cash.type = 'number';
 	cash.step = 'any';
 	cash.innerText = propArr[2].value;
-	cash.value = propArr[2].value;
+	cash.value = cash.title = propArr[2].value;
 
 	cash.className = 'cash ' + propArr[3];
 	
